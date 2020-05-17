@@ -10,7 +10,7 @@ app.use(cookieSession({
     keys:[keys.cookieKey]
 }))
 app.use(passport.initialize())
-app.use(passport.session())
+ app.use(passport.session())
 require('./models/User');
 require('./services/passport');
 mongoose.connect(keys.mongoURI);
