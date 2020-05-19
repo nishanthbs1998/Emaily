@@ -17,7 +17,7 @@ mongoose.connect(keys.mongoURI);
 //mongoose.connect(keys.mongoProdURI);
 require('./routes/authRoute')(app);//alternative for app.use(route)
 
-let port=process.env.port||3000;
+let port=process.env.PORT||3000;
 
 
 app.listen(port,()=>{
