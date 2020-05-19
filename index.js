@@ -14,7 +14,7 @@ app.use(passport.initialize())
 require('./models/User');
 require('./services/passport');
 mongoose.connect(keys.mongoURI);
-mongoose.connect(keys.mongoProdURI);
+//mongoose.connect(keys.mongoProdURI);
 require('./routes/authRoute')(app);//alternative for app.use(route)
 
 let port=process.env.port||3000;
